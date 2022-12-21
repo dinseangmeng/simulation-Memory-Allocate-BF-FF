@@ -1,6 +1,6 @@
 <script setup>
 const intToString=(num)=>{
-  return num/1000 + "K";
+  return num>=1000?num/1000 + "K":num;
 }
 
 </script>

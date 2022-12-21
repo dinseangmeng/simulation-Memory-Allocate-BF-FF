@@ -12,7 +12,7 @@ let TmpObj=[]
 let MemoryNotAllocat=[];
 let MemoryAllocateCase=[]
 const intToString=(num)=>{
-    return num/1000 + "K";
+    return num>=1000?num/1000 + "K":num;
 }
 const Processing=ref(null)
 const Call=()=>{

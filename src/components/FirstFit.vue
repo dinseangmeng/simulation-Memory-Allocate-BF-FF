@@ -13,7 +13,7 @@ let TmpObj=[]
 let MemoryNotAllocat=[];
 const Base=ref(store.state.Base)
 const intToString=(num)=>{
-    return num/1000 + "K";
+    return num>=1000?num/1000 + "K":num;
 }
 const Processing=ref(null)
 const Call=()=>{
