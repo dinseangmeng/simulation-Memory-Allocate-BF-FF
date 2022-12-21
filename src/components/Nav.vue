@@ -1,11 +1,13 @@
 <script setup>
+
 </script>
 
 <template>
     <main>
         <nav>
-            <div class="Logo">
-                DIN SEANGMENG
+            <div class="Logo" style="cursor: pointer;">
+                <router-link class="link" :to="{name:'home'}">DIN SEANGMENG</router-link>
+                
             </div>
             <div class="Link">
                 <router-link class="link" :to="{name:'home'}">Home</router-link>
@@ -41,6 +43,18 @@
             .Logo{
                 font-size: 2rem;
                 font-family: 'Fira Sans', sans-serif;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &::after{
+                        width: 0;
+                    }
+                    &:hover{
+                        &::after{
+                            width: 0;
+                        }
+                    }
+                }
                 @media only screen and (max-width: 600px){
                     // flex-direction: column;
                     display: none;
