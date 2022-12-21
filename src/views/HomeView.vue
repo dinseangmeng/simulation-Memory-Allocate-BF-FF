@@ -66,6 +66,7 @@ main{
       button{
         padding: .5rem 1.3rem;
         border: none;
+        cursor: pointer;
         border-radius: 3px;
         outline: none;
         background: #0077b6;

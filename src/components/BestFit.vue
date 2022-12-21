@@ -39,7 +39,7 @@ const Call=()=>{
             JobNotAllocat.push(JobItem)
         }else{
             let MemoryItem=FindMinItem(MemoryAllocateCase);
-            if(MemoryItem!=undefined){
+            if(MemoryItem!=undefined || MemoryItem!=null){
                 newObj.push({
                     JobItem,
                     MemoryItem,
